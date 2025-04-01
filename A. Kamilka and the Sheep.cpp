@@ -18,7 +18,6 @@ int main()
         sort(a,a+n);
         int ans = a[n-1]-a[0];
         cout<<ans<<endl;
-        return 0;
-
     }
+    return 0;
 }
