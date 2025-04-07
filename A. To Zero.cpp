@@ -6,7 +6,8 @@ int main()
     cin.tie(0);
     int t; cin>>t;
     while(t--){
-        int n,k,ans=0; cin>>n>>k;
+        int n,k,ans=0;
+        cin>>n>>k;
         if(n&1){
             n-=k; 
             ans++;
