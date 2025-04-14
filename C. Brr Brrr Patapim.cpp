@@ -24,7 +24,7 @@ int main()
             }
         }
         for(int i=1;i<=2*n;i++){
-            if(st.find(i)==st.end()){
+            if(st.find(i)==st.end()){//kono st er i value pawar posibility nai a to z search deci so oi i ke ami vector e push kore decci
                 v.push_back(i);
             }
         }
