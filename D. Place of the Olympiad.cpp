@@ -6,11 +6,11 @@ int main(){
     int t;
     cin>>t;
     while(t--){
-        int n,m,k;
+        long long n,m,k;
         cin>>n>>m>>k;
-        int low=1,high= m;
+        long long low=1,high= m;
         while(low<high){
-        int mid = (high+low)/2;
+        long long mid = (high+low)/2;
         if (n * (mid*(m / (mid + 1)) + m % (mid + 1)) >= k){
             high = mid;
         }else{
