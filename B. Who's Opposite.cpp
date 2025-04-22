@@ -9,11 +9,17 @@ int main()
     while(t--){
         int a,b,c;
         cin>>a>>b>>c;
-        if(abs(a-b)>c){
+        int diff = abs(a-b);
+        int count = 2*diff;
+        if(a>count || b>count ||c>count || a==b){
             cout<<"-1"<<endl;
-            return 0;
         }else{
-            cout<<abs(a-b)+c<<endl;
+            int adddiff = c+diff;
+            if(adddiff>count){
+                cout<< c- diff<<endl;
+            }else{
+                cout<<adddiff<<endl;
+            }
         }
     }
     return 0;
