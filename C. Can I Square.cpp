@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-bool is_square(int sum){
-    int root = sqrt(sum);
+bool is_square(long long int sum){
+    long long int root = sqrt(sum);
     return root*root == sum;
 }
 int main()
@@ -11,14 +11,14 @@ int main()
     int t;
     cin>>t;
     while(t--){
-        int n;
+        long long int n;
         cin>>n;
-        int a[n];
-        for(int i=0;i<n;i++){
+        long long int a[n];
+        for(long long int i=0;i<n;i++){
             cin>>a[i];
         }
-        int sum=0;
-        for(int i=0;i<n;i++){
+        long long int sum=0;
+        for(long long int i=0;i<n;i++){
             sum+=a[i];
         }
         if(is_square(sum)){
