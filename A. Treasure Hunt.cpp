@@ -9,22 +9,14 @@ int main()
     while(t--){
         long long int x,y,a;
         cin>>x>>y>>a;
-        long long int total_day =0;
-        long double depth = a+0.5;
-        while(true){
-            total_day +=x;
-            if(total_day>=depth){
-                cout<<"NO"<<endl;
-                break;
-            }
-            total_day +=y;
-            if(total_day>=depth){
-                cout<<"YES"<<endl;
-                break;
-            }
-
-        }
-
+        double target = a+0.5;
+        double full_cycle = floor(target/(x+y));
+        double depth = full_cycle*(x+y);
+        if(depth+x>target){
+            cout<<"NO"<<endl;
+        }else{
+            cout<<"YES"<<endl;
+        } 
     }
     return 0;
 }
