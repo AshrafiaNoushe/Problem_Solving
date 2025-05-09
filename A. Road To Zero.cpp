@@ -14,20 +14,20 @@ int main()
         if(x==0 && y==0){
             cout<<"0"<<endl;
         }else if(x>0 && y>0){
-            int diff = abs(x-y);
-            int val = diff*a;
+            long long diff = abs(x-y);
+            long long val = diff*a;
             if(2*a<b){
                 cout<<abs(((min(x,y))*a)*2+val)<<endl;
             }else{
                 cout<<abs((min(x,y)*b)+val)<<endl;
             }
         }else if(x<0 && y<0){
-            int diff = abs(abs(x)-abs(y));
-            int val = diff*a;
+            long long diff2 = abs(abs(x)-abs(y));
+            long long val2 = diff2*a;
             if(2*a<b){
-                cout<<abs(((min(x,y)*a)*2)+val)<<endl;
+                cout<<abs(((min(x,y)*a)*2)+val2)<<endl;
             }else{
-                cout<<abs(min(x,y)*b+val)<<endl;
+                cout<<abs(min(x,y)*b+val2)<<endl;
             }
         }else{
             cout<<abs(abs(x)+abs(y))*a<<endl;
