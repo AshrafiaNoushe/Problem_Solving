@@ -12,8 +12,8 @@ public:
             carry = sum/10;
             char c = '0'+sum%10;
             ans+=c;
-            index1--;
             index2--;
+            index1--;
 
         }
         while(index1>=0){
@@ -24,7 +24,7 @@ public:
             index1--;
         }
         if(carry){
-            ans+=carry+'0';
+            ans+='1';
         }
         reverse(ans.begin(),ans.end());
         return ans;
